@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    int ptu=0,ptm=0;
+
     public void sortearDado(View view) {
         //Criamos referencia para o elemento da interface
         TextView textDado = findViewById(R.id.textDado);
@@ -59,13 +61,13 @@ public class MainActivity extends AppCompatActivity {
 
         //fazer a verificação
         if (valorSorteado.equalsIgnoreCase(""+txtEntrada.getText())){
-            txtResPU.setText("Parabéns você teve sorte!!!");
-            txtResPU.setTextColor(Color.GREEN);
-
-
-        }//else
-           // txtRes.setText("100 anos de azar para você!!");
-        //   txtRes.setTextColor(Color.RED);
+            ptu++;
+            txtResPU.setText("Pontuação User:  "+ptu);
+        }
+        if(valorSorteado.equalsIgnoreCase(valorSorteadoMachine)){
+            ptm++;
+            txtResPM.setText("Pontuação Machine:  "+ptm);
+        }
 
     }
 
