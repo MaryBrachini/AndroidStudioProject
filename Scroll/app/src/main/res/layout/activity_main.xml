@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="260dp"
+        android:layout_height="243dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/segundasemcarne" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/croissant_one"
+        android:text="Uma Vida Sem Carne"
+        android:textAlignment="center"
+        android:textColor="#6DC30A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/croissant_one"
+        android:text="O que é"
+        android:textAlignment="center"
+        android:textColor="#6CC10A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="352dp"
+        android:layout_height="591dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="A Campanha Segunda Sem Carne, existente em mais de 40 países, como nos Estados Unidos e Reino Unido — onde seu principal embaixador é o ex-beatle, Paul McCartney — é apoiada por inúmeros líderes internacionais.  No Brasil, a iniciativa foi lançada em 2009 e, de lá pra cá, a Sociedade Vegetariana Brasileira (SVB) vem trabalhando para que a substituição da proteína animal pela vegetal seja praticada pela população e implementada pelo poder público, reduzindo a demanda coletiva por produtos de origem animal e gerando benefícios para a saúde das pessoas, para o meio ambiente e para os animais. Ao longo desses mais de 10 anos de campanha no Brasil, já foram oferecidas quase 500 milhões de refeições.  Um dos desdobramentos da adesão ao movimento estimulado pela campanha é a implementação de pratos à base de proteína vegetal na alimentação escolar. A Campanha Segunda Sem Carne, existente em mais de 40 países, como nos Estados Unidos e Reino Unido — onde seu principal embaixador é o ex-beatle, Paul McCartney — é apoiada por inúmeros líderes internacionais.  No Brasil, a iniciativa foi lançada em 2009 e, de lá pra cá, a Sociedade Vegetariana Brasileira (SVB) vem trabalhando para que a substituição da proteína animal pela vegetal seja praticada pela população e implementada pelo poder público, reduzindo a demanda coletiva por produtos de origem animal e gerando benefícios para a saúde das pessoas, para o meio ambiente e para os animais. Ao longo desses mais de 10 anos de campanha no Brasil, já foram oferecidas quase 500 milhões de refeições.  Um dos desdobramentos da adesão ao movimento estimulado pela campanha é a implementação de pratos à base de proteína vegetal na alimentação escolar."
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

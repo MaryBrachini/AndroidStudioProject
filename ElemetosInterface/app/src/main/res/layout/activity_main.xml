@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Escolha sua roupa"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#536DFE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <EditText
+        android:id="@+id/editTextRoupa"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:gravity="center|center_vertical"
+        android:hint="Escreva sua roupa"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selecionar"
+        android:text="Selecionar" />
+
+    <TextView
+        android:id="@+id/textViewEscolha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sua Escolha..." />
+
+</LinearLayout>
