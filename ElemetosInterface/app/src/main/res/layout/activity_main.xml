@@ -17,7 +17,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#536DFE"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +28,7 @@
     <EditText
         android:id="@+id/editTextRoupa"
         android:layout_width="match_parent"
-        android:layout_height="77dp"
+        android:layout_height="40dp"
         android:layout_margin="16dp"
         android:ems="10"
         android:gravity="center|center_vertical"
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:text="Escolha a Cor"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <CheckBox
@@ -64,10 +64,44 @@
         android:layout_height="wrap_content"
         android:text="Azul" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha a Cor"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgTamanho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbPequeno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pequeno" />
+
+        <RadioButton
+            android:id="@+id/rbMedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Médio" />
+
+        <RadioButton
+            android:id="@+id/rbGrande"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grande" />
+
+    </RadioGroup>
+
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
         android:layout_margin="16dp"
         android:onClick="selecionar"
         android:text="Selecionar" />
@@ -85,5 +119,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:hint="Sua cor..." />
+
+    <TextView
+        android:id="@+id/textTamanho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Tamanho..." />
 
 </LinearLayout>
